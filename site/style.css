@@ -1,0 +1,55 @@
+/* let the list element under section element with menu class without bullet points */
+	section.menu li{
+		list-style: none;
+
+	}
+/* we want to let the a element in li element under section element with menu look like buttons -remove underlines,set color around and change text color*/
+	section.menu a:link, a:visited {
+		text-decoration: none;
+		background-color: orangered;
+		border: 2px solid orange;
+		color: darkgreen;
+		display: block;
+		width: 200px;
+		text-align: center;
+		margin-block: 2px;
+	}
+/* when hovering over on menu button, we want to let users know that this is the target by changing its color while hovered */
+	section.menu a:hover {
+		background-color: rebeccapurple;
+		color: yellowgreen;
+	}
+/* when the user choose and click on the button, we want to let the while clicking color changed */
+	section.menu a:active {
+		background-color: black;
+		color: whitesmoke;
+	}
+/* we want to make one of the list items be bigger than the others while hovered over, use nth-child(3):hover */
+	section.menu li:nth-child(3):hover {
+		font-size:24px;
+	}
+
+	p {
+		color:blue;
+	}
+
+	li.highlight {
+		color: springgreen;
+		text-align: left;
+	}
+	section li {
+		color: darkgreen;
+	}
+
+	.highlight {
+		color:red;
+		text-align: center;
+	}
+
+	#ok {
+		font-style: italic;
+	}
+
+	#Section2 > h2 {
+		color:greenyellow;
+	}

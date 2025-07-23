@@ -4,12 +4,63 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Site of Yingyu</title>
+	<title>YY - My Site</title>
+	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-<h1>Hello Yingyu</h1>
-<p>My name is Yingyu, but I d prefer people call me Stefanie</p>
-<p>Since I was never called by my first name in my own country, it is odd to hear people calling me Yingyu, also in a tone that I m not used to.</p>
-<p>now I dont know why is it not shown</p>
+<h1 class="highlight">This is a note from the learning of HTML,CSS,JS for Web Developers</h1>
+<h2 id="top">Links to Sections of the same page</h2>
+<section class="menu">
+	<ul>
+		<li><a href="#Section1">Section1</a></li>
+		<li><a href="#Section2">Section2</a></li>
+		<li><a href="#Section3">Section3</a></li>
+	</ul>
+	<span>or we can instead of using href attribute, use the name attribute to name the section n</span>
+</section>
+
+	<p id="ok">This is a quote I write here "I m now wrting &lt; &amp; &gt; "</p>
+<section id="Section1">
+<h2>This is a list of my books:</h2>	
+<ul>
+<li class="highlight">&lt;Der Bruder Karamsasow&gt;</li>
+<li>&lt;Das Spiel ist aus&gt;</li>
+<li>&lt;Tote ohne Begräbnis&gt;</li>
+</ul>
+</section>
+
+<section id="Section2">
+<h2>Here is my daily ToDos:</h2>
+<ol>
+<li>get up and ready
+<ol>
+	<li>drink water</li>
+	<li>get dressed</li>
+	<li>This is a list in ol, which is in li:get up and ready</li>
+</ol></li>
+<li>make coffee</li>
+<li>send Mona to school</li>
+</ol>
+</section>
+
+<section id="Section3">
+	<h2>Examples of links:</h2>
+	<p>The link example</p>
+	<a href="http://www.google.com">it can be a relative or absolute url, I can refer the files in my directory as well, makes the website relevant</a>
+	<div><p>The link example with the div element inside a element</p></div>
+	<a href="http://www.google.com"><div>It can wrap the div tags in the a tags, so the div content can be shown as hypertext, so that it is within its own line, it can be wraped in the a tags, because a tags are also flow content</div>
+	</a>
+	<div><p>The example of the a tags with attribute target and title,</p></div>
+	<a href="http://www.google.com" target="_blank" title="Hi Im the title of this link">use target attribute to open the link in a new tab, sothat the users can come back to this side again.Use a Title attribute, which will be shown when the link got hover event.</a>
+</section>
+
+<section>
+	<p>The image reference:img tag; use width and the height attributes to reserve the space for the image, so that the page doesnt jump while loading the image</p>
+	<img src="https://miro.medium.com/v2/1*ZnJV77F-NyuzYjZ7YrcJ8g.png" width="400" height="235" alt="Online image of a directory tree">
+</section>
+
+<span> Stefanie Yingyu Ge 2025 &copy; Copyright </span> 
+<p>Back to top: <a href="#top"> Back to Top </a></p>
 </body>
 </html>
