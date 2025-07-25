@@ -4,30 +4,39 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>YY - My Site</title>
+	<title>YY - My Profile</title>
 	<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 <h1 class="highlight">This is a note from the learning of HTML,CSS,JS for Web Developers</h1>
 <h2 id="top">Links to Sections of the same page</h2>
+<span>here we are using menu class to redefine how the list items look like, namely without bullet points, but like buttons</span>
 <section class="menu">
 	<ul>
-		<li><a href="#Section1">Section1</a></li>
+		<li><a href="#Section1">My favourite books</a></li>
 		<li><a href="#Section2">Section2</a></li>
 		<li><a href="#Section3">Section3</a></li>
 	</ul>
-	<span>or we can instead of using href attribute, use the name attribute to name the section n</span>
+	<span>here we are using the a href="#Section1" to refer id of section elements, or we can instead of using href attribute, use the name attribute to name the section n</span>
 </section>
 
-	<p id="ok">This is a quote I write here "I m now wrting &lt; &amp; &gt; "</p>
+
 <section id="Section1">
-<h2>This is a list of my books:</h2>	
-<ul>
-<li class="highlight">&lt;Der Bruder Karamsasow&gt;</li>
-<li>&lt;Das Spiel ist aus&gt;</li>
-<li>&lt;Tote ohne Begräbnis&gt;</li>
-</ul>
+	<div id="booklistcontainer">
+		<h2>This is a list of my books:</h2>
+			<div id="booklist">
+				<ul>
+					<li>&lt;Der Bruder Karamsasow&gt;</li>
+					<li>&lt;Das Spiel ist aus&gt;</li>
+					<li>&lt;Tote ohne Begräbnis&gt;</li>
+					<li>&lt;Der Idiot&gt;</li>
+					<li>&lt;Verbrechen und Strafe&gt;</li>
+					<li>&lt;Der Spieler&gt;</li>
+				</ul>
+			</div>
+	</div>
+	<span id="italic">*Here we can use "&lt", "&amp" &gt, with semicolom to escape &lt; &amp; &gt; </span>
 </section>
 
 <section id="Section2">
@@ -45,14 +54,22 @@
 </section>
 
 <section id="Section3">
+	<div>
 	<h2>Examples of links:</h2>
-	<p>The link example</p>
-	<a href="http://www.google.com">it can be a relative or absolute url, I can refer the files in my directory as well, makes the website relevant</a>
-	<div><p>The link example with the div element inside a element</p></div>
-	<a href="http://www.google.com"><div>It can wrap the div tags in the a tags, so the div content can be shown as hypertext, so that it is within its own line, it can be wraped in the a tags, because a tags are also flow content</div>
-	</a>
-	<div><p>The example of the a tags with attribute target and title,</p></div>
-	<a href="http://www.google.com" target="_blank" title="Hi Im the title of this link">use target attribute to open the link in a new tab, sothat the users can come back to this side again.Use a Title attribute, which will be shown when the link got hover event.</a>
+	<div>
+		<a href="http://www.google.com">it can be a relative or absolute url, I can refer the files in my directory as well, makes the website relevant</a>
+		<p>The link example</p>
+	</div>
+	<div>
+		<a href="http://www.google.com">It can wrap the div tags in the a tags, so the div content can be shown as hypertext, so that it is within its own line, it can be wraped in the a tags, because a tags are also flow content</a>
+		<p>The link example with the div element inside a element</p>
+	</div>
+	<div>
+		<a href="http://www.google.com" target="_blank" title="Hi Im the title of this link">use target attribute to open the link in a new tab, sothat the users can come back to this side again.Use a Title attribute, which will be shown when the link got hover event.</a>
+		<p>The example of the a tags with attribute target and title</p>
+	</div>
+	</div>
+	
 </section>
 
 <section>

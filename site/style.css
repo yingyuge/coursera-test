@@ -6,9 +6,9 @@
 /* we want to let the a element in li element under section element with menu look like buttons -remove underlines,set color around and change text color*/
 	section.menu a:link, a:visited {
 		text-decoration: none;
-		background-color: orangered;
+		background-color: limegreen;
 		border: 2px solid orange;
-		color: darkgreen;
+		color: black;
 		display: block;
 		width: 200px;
 		text-align: center;
@@ -29,16 +29,32 @@
 		font-size:24px;
 	}
 
-	p {
-		color:blue;
+/* want to apply box around section1 book list, and its content, ul, li */
+
+	#booklistcontainer {
+		background-color: palegreen;
+		padding: 10px 10px 10px 10px;
+		border:3px solid seagreen;
+		margin: 40px;
+		width: 400px;
+		height: 200px;
+		box-sizing: border-box;
+		overflow: auto;
+	
+	}
+	#booklist {
+		background-color: seagreen;
+		padding: 5px 5px 5px 5px;
+		margin: 10px;
 	}
 
-	li.highlight {
-		color: springgreen;
-		text-align: left;
+	div #booklist li {
+		list-style: none;
+		color: black;
 	}
+
 	section li {
-		color: darkgreen;
+		color: black;
 	}
 
 	.highlight {
@@ -46,10 +62,34 @@
 		text-align: center;
 	}
 
-	#ok {
+	#italic {
 		font-style: italic;
 	}
 
 	#Section2 > h2 {
 		color:greenyellow;
 	}
+
+	#Section2 {
+		background-color: antiquewhite;
+		background-image: url("Winter-Teams-BG-7.png");
+	}
+
+	#Section3 p {
+		background-color: darkorange;
+		width: 300px;
+		height: 35px;
+		border: 1px solid black;
+		float: right;
+
+	}
+
+	#Section3 div {
+		background-color: whitesmoke;
+		overflow: hidden;
+	}
+	#Section3 a {
+		clear: both;
+	}
+
+
